@@ -1,0 +1,23 @@
+@import '_colors';
+@import '_variables';
+@import '../../primeNg/_components';
+@import '_extensions';
+
+html {
+  ::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    box-shadow: inset 0 0 0 12px $primaryColor;
+    border-radius: 12px;
+  }
+  ::-webkit-scrollbar-corner {
+    background-color: --surface-b;
+  }
+  .news-icon {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+  }
+  .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    border-color: $secondaryColor;
+    color: $secondaryColor;
+  }
+}

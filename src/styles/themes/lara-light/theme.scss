@@ -1,0 +1,37 @@
+@import '_colors';
+@import '_variables';
+@import '../../primeNg/_components';
+@import '_extensions';
+
+html {
+  ::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    box-shadow: inset 0 0 0 12px $primaryColor;
+    border-radius: 12px;
+  }
+  ::-webkit-scrollbar-corner {
+    background-color: --surface-b;
+  }
+  p-menubar {
+    .p-menuitem .p-menuitem-text,
+    .p-menubar-button {
+      color: white !important;
+    }
+    .p-menuitem:hover .p-menuitem-text,
+    .p-menubar-button:hover {
+      color: #495057 !important;
+    }
+    @media screen and (max-width: 960px) {
+      p-menubarsub .p-menuitem .p-menuitem-text {
+        color: #495057 !important;
+      }
+    }
+    span.p-inputswitch-slider {
+      background: scale-color($color: #0267bc, $lightness: 20%) !important;
+    }
+  }
+  .news-icon {
+    background-color: #0267bc;
+    color: #fff100;
+  }
+}

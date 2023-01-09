@@ -1,0 +1,81 @@
+<ng-container *ngIf="loading then load; else default">
+</ng-container>
+<ng-template #load>
+  <div class="flex w-full justify-content-center">
+    <p-progressSpinner></p-progressSpinner>
+  </div>
+</ng-template>
+<ng-template #default>
+  <fcs-slider [slides]="(home$ | async)?.slides!">
+
+  </fcs-slider>
+  <div class="surface-card shadow-2 border-round flex p-3 flex-column md:flex-row">
+    <div *ngFor="let e of (home$ | async)?.events"
+         class="border-bottom-1 md:border-right-1 md:border-bottom-none surface-border flex-auto p-3 cursor-pointer"
+         [routerLink]="'/news'">
+      <div class="flex align-items-center mb-3">
+        <span class="text-500 font-medium">{{e.date | date:'dd.MMM.YY'}}</span>
+      </div>
+      <span class="block text-900 font-medium mb-4 text-xl">{{e.title}}</span>
+      <div class="flex align-items-center">
+        <span class="font-medium ">{{e.subtitle}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="px-4 py-8 md:px-6 lg:px-8">
+    <div class="text-center font-bold text-900 text-5xl mb-3">Die Sonnenburg</div>
+    <div class="text-center text-xl line-height-3 text-600 mb-6">
+      Der Freundschaftsclub Sonneburg wurde 1932 in Hüsten gegründet und ist damit einer der am längsten bestehenden
+      Freundschaftsclub im Sauerland. Traditionell richten wir unser Sommerfest am 3. Wochenende im Juli aus, wo wir uns
+      wieder auf euch freuen und mit euch feiern zu können.
+    </div>
+    <div class="grid">
+      <div class="col-12 md:col-6 text-center mb-5">
+        <img src="assets/images/home/detlef.jpg"
+             class="mb-3 border-radius-25"
+             [style]="{'max-width': '250px'}" />
+        <div class="text-xl text-900 font-medium mb-3">Detlef Limberg</div>
+        <a class="text-blue-600 text-xl mb-3"
+           [routerLink]="'/vorstand'">1. Vorsitzender
+        </a>
+      </div>
+      <div class="col-12 md:col-6 text-center mb-5">
+        <img src="assets/images/home/simon.jpg"
+             class="mb-3  border-radius-25"
+             [style]="{'max-width': '250px'}" />
+        <div class="text-xl text-900 font-medium mb-3">Simon Weber</div>
+        <div class="text-blue-600 text-xl mb-3">1. Vorsitzender</div>
+        <div class="inline-flex align-items-center justify-content-center">
+          der Jungsteinewerfer
+        </div>
+      </div>
+      <div class="col-12 md:col-4 text-center mb-5">
+        <img src="assets/images/home/jung.jpg"
+             class="mb-3 border-radius-25"
+             [style]="{'max-width': '250px'}" />
+        <div class="text-xl text-900 font-medium mb-3">Lukas Magh</div>
+        <a class="text-blue-600 text-xl mb-3"
+           [routerLink]="'/koenige'">Jungsteinewerferkönig
+        </a>
+      </div>
+      <div class="col-12 md:col-4 text-center mb-5">
+        <img src="assets/images/home/koenig.jpg"
+             class="mb-3 border-radius-25"
+             [style]="{'max-width': '300px'}" />
+        <div class="text-xl text-900 font-medium mb-3">Fabian Kurz & Anna-Lena Weinz</div>
+        <a class="text-blue-600 text-xl mb-3"
+           [routerLink]="'/koenige'">Königspaar 2022
+        </a>
+      </div>
+      <div class="col-12 md:col-4 text-center mb-5">
+        <img src="assets/images/home/kinder.jpg"
+             class="mb-3 border-radius-25"
+             [style]="{'max-width': '250px'}" />
+        <div class="text-xl text-900 font-medium mb-3">Henry Groß & Nele Jochheim</div>
+        <a class="text-blue-600 text-xl mb-3"
+           [routerLink]="'/koenige'">Kinderkönigspaar
+        </a>
+      </div>
+    </div>
+  </div>
+</ng-template>

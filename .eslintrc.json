@@ -1,0 +1,215 @@
+{
+  "root": true,
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "project": ["tsconfig.json"],
+    "sourceType": "module"
+  },
+  "ignorePatterns": ["**/*"],
+  "plugins": ["@nrwl/nx", "@typescript-eslint", "eslint-plugin-prettier", "prettier"],
+  // https://eslint.org/docs/rules/
+  // https://basarat.gitbook.io/typescript/styleguide
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "@nrwl/nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": [],
+            "depConstraints": [
+              {
+                "sourceTag": "*",
+                "onlyDependOnLibsWithTags": ["*"]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["plugin:@nrwl/nx/typescript"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "extends": ["plugin:@nrwl/nx/javascript"],
+      "rules": {}
+    }
+  ],
+  "rules": {
+    // conflicts with prettier
+    "indent": ["off"],
+    "linebreak-style": "off",
+    "no-console": [
+      1 // default off
+    ],
+    "no-template-curly-in-string": [1],
+    "no-unreachable-loop": ["error"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    // best practices
+    "complexity": ["warn", 15],
+    "default-case-last": "warn",
+    "dot-notation": ["warn"],
+    "eqeqeq": ["warn"],
+    "max-classes-per-file": ["error", 1],
+    "max-len": [
+      "error",
+      {
+        "code": 140,
+        "tabWidth": 2
+      }
+    ],
+    "max-lines": ["error", 400],
+    "max-lines-per-function": [
+      "error",
+      {
+        "max": 75,
+        "skipBlankLines": true,
+        "skipComments": true
+      }
+    ],
+    "max-nested-callbacks": [
+      "error",
+      {
+        "max": 3
+      }
+    ],
+    "no-multi-assign": "warn",
+    "no-confusing-arrow": "warn",
+    "no-constructor-return": "error",
+    "no-duplicate-imports": "warn",
+    "no-floating-decimal": "warn",
+    "no-implicit-coercion": ["warn"],
+    "no-invalid-this": "error",
+    "no-iterator": "error",
+    "no-lone-blocks": "error",
+    "no-lonely-if": ["warn"],
+    "no-nested-ternary": "error",
+    "no-new": "warn",
+    "no-new-func": "error",
+    "no-new-wrappers": "error",
+    "no-nonoctal-decimal-escape": "error",
+    "no-proto": "error",
+    "no-return-await": ["warn"],
+    "no-script-url": ["error"],
+    "no-self-compare": "error",
+    "no-sequences": "error",
+    "no-useless-call": "error",
+    "no-useless-computed-key": "warn",
+    "no-useless-concat": "error",
+    "no-var": "error",
+    "no-void": "error",
+    "prefer-promise-reject-errors": "error",
+    "prefer-regex-literals": "warn",
+    "prefer-template": "warn",
+    "require-await": "error",
+    // variables
+    "no-restricted-globals": [
+      "error",
+      {
+        "name": "cst",
+        "message": "Use 'costCenter' instead."
+      }
+    ],
+    // naming
+    "camelcase": "error",
+    "consistent-this": "error",
+    "line-comment-position": [
+      "warn",
+      {
+        "position": "above"
+      }
+    ],
+    // ES 6
+    "arrow-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    // https://www.npmjs.com/package/@typescript-eslint/eslint-plugin
+    "@typescript-eslint/member-ordering": [
+      "error",
+      {
+        "default": {
+          "memberTypes": [
+            // Index signature
+            "signature",
+
+            // Fields
+            "public-static-field",
+            "protected-static-field",
+            "private-static-field",
+            "public-decorated-field",
+            "protected-decorated-field",
+            "private-decorated-field",
+            "public-instance-field",
+            "protected-instance-field",
+            "private-instance-field",
+            "public-abstract-field",
+            "protected-abstract-field",
+            "private-abstract-field",
+
+            // Constructors
+            "public-constructor",
+            "protected-constructor",
+            "private-constructor",
+
+            // Methods
+            "public-static-method",
+            "protected-static-method",
+            "private-static-method",
+            "public-decorated-method",
+            "protected-decorated-method",
+            "private-decorated-method",
+            "public-instance-method",
+            "protected-instance-method",
+            "private-instance-method",
+            "public-abstract-method",
+            "protected-abstract-method",
+            "private-abstract-method"
+          ],
+          "order": "as-written"
+        }
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      // variableLike: variable, function and parameter
+      // memberLike: property, parameterProperty, method, accessor, enumMember
+      // typeLike: class, interface, typeAlias, enum, typeParameter
+      "warn",
+      {
+        "selector": ["memberLike"],
+        "format": ["camelCase"],
+        "leadingUnderscore": "allow"
+      },
+      {
+        "selector": ["typeLike"],
+        "format": ["PascalCase"],
+        "leadingUnderscore": "allow"
+      },
+      {
+        "selector": ["variable"],
+        "format": ["camelCase"],
+        "leadingUnderscore": "allow"
+      },
+      {
+        "selector": "classProperty",
+        "modifiers": ["private"],
+        "format": ["camelCase"],
+        "leadingUnderscore": "require"
+      },
+      {
+        "selector": "enumMember",
+        "format": ["PascalCase"]
+      }
+    ]
+  }
+}

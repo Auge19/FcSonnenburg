@@ -1,0 +1,26 @@
+@mixin theming($dark) {
+  @include scrollbar($dark);
+}
+
+@mixin scrollbar($is-dark) {
+  .layout-content::before {
+    @if $is-dark {
+      opacity: 30%;
+    } @else {
+      opacity: 20%;
+    }
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    box-shadow: inset 0 0 0 12px var(--primary-color);
+    border-radius: 12px;
+  }
+  ::-webkit-scrollbar-corner {
+    @if $is-dark {
+      background-color: #121212;
+    } @else {
+      background-color: #ffffff;
+    }
+  }
+}

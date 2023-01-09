@@ -1,0 +1,14 @@
+$primaryColor: #0267bc !default;
+$primaryLightColor: rgba($primaryColor, 0.5) !default;
+$primaryDarkColor: scale-color($primaryColor, $lightness: -5%) !default;
+$primaryDarkerColor: scale-color($primaryColor, $lightness: -10%) !default;
+$primaryTextColor: #ffffff !default;
+
+$highlightBg: rgba(147, 197, 253, 0.16) !default;
+$highlightTextColor: rgba(255, 255, 255, 0.87) !default;
+
+$secondaryColor: #fff100 !default;
+$secondaryLightColor: rgba($secondaryColor, 0.5) !default;
+$secondaryDarkColor: scale-color($secondaryColor, $lightness: -5%) !default;
+$secondaryDarkerColor: scale-color($secondaryColor, $lightness: -10%) !default;
+$secondaryTextColor: #ffffff !default;

@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Detlef Limberg",
+    "url": "assets/images/board/vorsitz1.jpg",
+    "position": "1. Vorsitzender"
+  },
+  {
+    "name": "Thomas Spindeldreher",
+    "url": "assets/images/board/vorsitz2.jpg",
+    "position": "2. Vorsitzender"
+  },
+  {
+    "name": "Valerie Arndt",
+    "url": "assets/images/board/vorsitz3.jpg",
+    "position": "3. Vorsitzende"
+  },
+  {
+    "name": "Heinz Kurz",
+    "url": "assets/images/board/gesch1.jpg",
+    "position": "1. Geschäftsführer"
+  },
+  {
+    "name": "Andreas Schauerte",
+    "url": "assets/images/board/gesch2.jpg",
+    "position": "2. Geschäftsführer"
+  },
+  {
+    "name": "Christian Jochheim",
+    "url": "assets/images/board/kass1.jpg",
+    "position": "1. Kassierer"
+  },
+  {
+    "name": "Alina Limberg",
+    "position": "1. Schriftführerin"
+  },
+  {
+    "name": "Steffen Augustin",
+    "url": "assets/images/board/schrift2.jpg",
+    "position": "2. Schriftführer"
+  },
+  {
+    "name": "Günter Bamberg Jr.",
+    "url": "assets/images/board/bei1.jpg",
+    "position": "1. Beisitzer"
+  },
+  {
+    "name": "Kevin Limberg",
+    "url": "assets/images/board/bei2.jpg",
+    "position": "2. Beisitzer"
+  },
+  {
+    "name": "Martin Humpert",
+    "url": "assets/images/board/bei3.jpg",
+    "position": "3. Beisitzer"
+  },
+  {
+    "name": "Annette Kempkensteffen",
+    "url": "assets/images/board/bei4.jpg",
+    "position": "4. Beisitzerin"
+  },
+  {
+    "name": "Fabian Kurz",
+    "url": "assets/images/board/bei5.jpg",
+    "position": "5. Beisitzer"
+  },
+  {
+    "name": "Lukas Magh",
+    "position": "6. Beisitzer"
+  },
+  {
+    "name": "Stefan Schulz",
+    "url": "assets/images/board/fest.jpg",
+    "position": "Festadjudant"
+  }
+]

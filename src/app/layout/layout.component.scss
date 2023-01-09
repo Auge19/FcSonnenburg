@@ -1,0 +1,18 @@
+:host {
+  height: 100vh;
+  overflow-y: scroll;
+  ::ng-deep .p-menuitem-link-active {
+    box-shadow: inset 4px 0 0 var(--secondary) !important;
+  }
+  ::ng-deep p-menubar .p-menubar {
+    border-radius: 0 0 4px 4px;
+    min-height: 80px;
+    background-color: var(--primary);
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+  }
+  .main-content {
+    height: calc(100vh - 80px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}

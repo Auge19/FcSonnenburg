@@ -1,0 +1,29 @@
+<div class="flex flex-column surface-ground">
+  <p-menubar [model]="items"
+             [styleClass]="'py-3 px-6'"
+             [style]="{'height': '60px'}">
+    <ng-template pTemplate="start">
+      <img src="assets/images/logo.jpg"
+           height="40"
+           class="mr-2"
+           [style]="{'border-radius': '15px'}">
+    </ng-template>
+    <div class="flex align-items-center">
+      <i *ngIf="!(theme$ | async)"
+         class="fa-regular fa-sun"
+         style="color: white !important;">
+      </i>
+      <i *ngIf="(theme$ | async)"
+         class="fa-regular fa-moon">
+      </i>
+      <p-inputSwitch checked
+                     [(ngModel)]="checked"
+                     (onChange)="themeChange($event)">
+      </p-inputSwitch>
+    </div>
+  </p-menubar>
+  <div class="flex flex-column surface-ground text-900 main-content">
+    <router-outlet></router-outlet>
+    <fcs-footer></fcs-footer>
+  </div>
+</div>

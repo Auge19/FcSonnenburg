@@ -1,0 +1,18 @@
+::ng-deep .mat-calendar-body-label {
+  opacity: 0;
+  &[colspan="7"] {
+    display: none;
+  }
+}
+
+::ng-deep .mat-calendar {
+  max-width: 960px;
+}
+
+::ng-deep .mat-calendar-controls {
+  margin: 1% calc(33% / 7 - 16px) !important;
+}
+
+::ng-deep .mat-datepicker-content {
+  height: 100%;
+}

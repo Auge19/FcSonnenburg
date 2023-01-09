@@ -1,0 +1,31 @@
+<div class="grid align-content-center justify-content-center">
+  <p-tabView class="w-full"
+             (activeIndexChange)="activeIndexChange($event)">
+    <p-tabPanel *ngFor="let y of years$ | async; let i = index"
+                header="{{y}}"
+                [selected]="currentIndex === i">
+      <ng-template pTemplate="content">
+        <p-carousel *ngFor="let p of (preview$ | async)"
+                    class="w-full"
+                    [value]="p.images"
+                    [circular]="true"
+                    [showIndicators]="false"
+                    [responsiveOptions]="responsiveOptions">
+          <ng-template pTemplate="header"
+                       let-test>
+            <h5 class="cursor-pointer"
+                (click)="eventClick(y, p.title)">{{p.title}}
+            </h5>
+          </ng-template>
+          <ng-template let-image
+                       pTemplate="item">
+            <img class="image cursor-pointer"
+                 lazy
+                 src="{{image.thumb}}"
+                 (click)="eventClick(y, p.title)">
+          </ng-template>
+        </p-carousel>
+      </ng-template>
+    </p-tabPanel>
+  </p-tabView>
+</div>

@@ -1,0 +1,90 @@
+<div class="grid align-content-center justify-content-center">
+  <p-tabView class="xl:col-8 md:col-12 p-3">
+    <p-tabPanel header="Königspaare">
+      <ng-container *ngIf="loading$ | async">
+        <p-progressSpinner></p-progressSpinner>
+      </ng-container>
+      <ul class="list-none p-0 m-0">
+        <li *ngFor="let k of (kings$ | async)"
+            class="flex flex-column md:flex-row py-6 border-top-1 border-bottom-1 surface-border md:align-items-center">
+          <img src="{{k.url}}"
+               class="w-12rem flex-shrink-0 mx-auto md:mx-0"
+               onerror="this.src='assets/images/person.svg'" />
+          <div class="w-full sm:w-6 flex flex-column">
+            <span class="text-600">{{k.year}}</span>
+            <span class="text-900 text-xl font-medium mb-3">{{k.king}}</span>
+            <span class="text-900 text-xl font-medium mb-3">{{k.partner}}</span>
+          </div>
+        </li>
+      </ul>
+    </p-tabPanel>
+    <p-tabPanel header="Jugendkönige">
+      <ul class="list-none p-0 m-0">
+        <li *ngFor="let y of (youths$ | async)"
+            class="flex flex-column md:flex-row py-6 border-top-1 border-bottom-1 surface-border md:align-items-center">
+          <img src="{{y.url}}"
+               class="w-12rem flex-shrink-0 mx-auto md:mx-0"
+               onerror="this.src='assets/images/person.svg'" />
+          <div class="w-full sm:w-6 flex flex-column">
+            <span class="text-600">{{y.year}}</span>
+            <span class="text-900 text-xl font-medium mb-3">{{y.king}}</span>
+            <span class="text-900 text-xl font-medium mb-3">{{y.partner}}</span>
+          </div>
+        </li>
+      </ul>
+    </p-tabPanel>
+    <p-tabPanel header="Kinderkönige">
+      <ng-container *ngTemplateOutlet="kids;"></ng-container>
+    </p-tabPanel>
+  </p-tabView>
+</div>
+
+<ng-template #king
+             let-k>
+  <ul class="list-none p-0 m-0">
+    <li *ngFor="let k of (kings$ | async)"
+        class="flex flex-column md:flex-row py-6 border-top-1 border-bottom-1 surface-border md:align-items-center">
+      <img src="{{k.url}}"
+           class="w-12rem flex-shrink-0 mx-auto md:mx-0"
+           onerror="this.src='assets/images/person.svg'" />
+      <div class="w-full sm:w-6 flex flex-column">
+        <span class="text-600">{{k.year}}</span>
+        <span class="text-900 text-xl font-medium mb-3">{{k.king}}</span>
+        <span class="text-900 text-xl font-medium mb-3">{{k.partner}}</span>
+      </div>
+    </li>
+  </ul>
+</ng-template>
+
+<ng-template #youth
+             let-k>
+  <ul class="list-none p-0 m-0">
+    <li *ngFor="let y of (youths$ | async)"
+        class="flex flex-column md:flex-row py-6 border-top-1 border-bottom-1 surface-border md:align-items-center">
+      <img src="{{y.url}}"
+           class="w-12rem flex-shrink-0 mx-auto md:mx-0"
+           onerror="this.src='assets/images/person.svg'" />
+      <div class="w-full sm:w-6 flex flex-column">
+        <span class="text-600">{{y.year}}</span>
+        <span class="text-900 text-xl font-medium mb-3">{{y.king}}</span>
+      </div>
+    </li>
+  </ul>
+</ng-template>
+
+<ng-template #kids
+             let-k>
+  <ul class="list-none p-0 m-0">
+    <li *ngFor="let k of (kids$ | async)"
+        class="flex flex-column md:flex-row py-6 border-top-1 border-bottom-1 surface-border md:align-items-center">
+      <img src="{{k.url}}"
+           class="w-12rem flex-shrink-0 mx-auto md:mx-0"
+           onerror="this.src='assets/images/person.svg'" />
+      <div class="w-full sm:w-6 flex flex-column">
+        <span class="text-600">{{k.year}}</span>
+        <span class="text-900 text-xl font-medium mb-3">{{k.king}}</span>
+        <span class="text-900 text-xl font-medium mb-3">{{k.partner}}</span>
+      </div>
+    </li>
+  </ul>
+</ng-template>

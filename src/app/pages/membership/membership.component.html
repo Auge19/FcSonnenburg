@@ -1,0 +1,243 @@
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+  <div class="grid">
+    <a pButton
+       pRipple
+       href="../../../assets/Beitrittserklärung.pdf"
+       target="_blank">Beitrittserklärung</a>
+  </div>
+</div>
+<!-- <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+  <div class="grid">
+    <div class="col-12">
+      <div class="text-900 font-medium text-xl mb-3">Mitgliedsantrag</div>
+    </div>
+    <form [formGroup]="bioForm">
+      <div class="col-12">
+        <div class="grid formgrid p-fluid">
+          <div class="field mb-4 md:col-6 sm:col-12">
+            <label for="name"
+                   class="font-medium text-900">Name:</label>
+            <input id="name"
+                   type="text"
+                   pInputText>
+          </div>
+          <div class="field mb-4 md:col-6 sm:col-12">
+            <label for="surename"
+                   class="font-medium text-900">Vorname:</label>
+            <input id="surename"
+                   type="text"
+                   pInputText>
+          </div>
+          <div class="field mb-4 md:col-4 sm:col-12">
+            <label for="street"
+                   class="font-medium text-900">Straße:</label>
+            <input id="street"
+                   type="text"
+                   pInputText>
+          </div>
+          <div class="field mb-4 md:col-4 sm:col-12">
+            <label for="zip"
+                   class="font-medium text-900">PLZ:</label>
+            <input id="zip"
+                   type="text"
+                   pInputText>
+          </div>
+          <div class="field mb-4 md:col-4 sm:col-12">
+            <label for="city"
+                   class="font-medium text-900">Ort:
+            </label>
+            <input id="city"
+                   type="text"
+                   pInputText>
+          </div>
+          <div class="field mb-4 md:col-5 sm:col-12">
+            <label for="birthday"
+                   class="font-medium text-900">Geboren am:
+            </label>
+            <p-calendar id="birthday"
+                        [showIcon]="true">
+            </p-calendar>
+          </div>
+          <div class="field mb-4 md:col-5 sm:col-12">
+            <label for="marriage"
+                   class="font-medium text-900">Verheiratet seit:
+            </label>
+            <p-calendar id="marriage"
+                        [showIcon]="true">
+            </p-calendar>
+          </div>
+          <div class="flex field mb-4 col-1 sm:col-12">
+            <div class="flex align-items-center">
+              <label class="ml-2 text-900">Rentner</label>
+              <p-checkbox inputId="privacy"
+                          [binary]="true">
+              </p-checkbox>
+            </div>
+          </div>
+          <div class="field mb-4 col-12 md:col-6">
+            <label for="email"
+                   class="font-medium text-900">Email
+            </label>
+            <input id="email"
+                   type="text"
+                   pInputText>
+          </div>
+          <div class="field-radiobutton mb-4 col-12 text-900">
+            <p-radioButton name="paying"
+                           value="sepa"
+                           [ngModelOptions]="{standalone: true}"
+                           [(ngModel)]="paying">
+            </p-radioButton>
+            <label>SEPA Lastschrift</label>
+          </div>
+          <div class="field-radiobutton mb-4 col-12 text-900">
+            <p-radioButton name="paying"
+                           value="cash"
+                           [ngModelOptions]="{standalone: true}"
+                           [(ngModel)]="paying">
+            </p-radioButton>
+            <label>Bar</label>
+          </div>
+          <form *ngIf="paying === 'sepa'"
+                [formGroup]="sepaForm">
+            <div class="grid formgrid p-fluid">
+              <ul class="list-none p-0 m-0">
+                <li class="flex align-items-center py-3 px-2 border-top-1 surface-border flex-wrap w-full">
+                  <div class="text-500 w-6 md:w-2 font-medium">Zahlungsempfänger:</div>
+                  <div class="w-6 md:w-10">
+                    <div class="text-900 w-full md:w-8 md:flex-order-0 flex-order-1">FC Sonnenburg e.V.</div>
+                    <div class="text-900 w-full md:w-8 md:flex-order-0 flex-order-1">Flammberg 15 a</div>
+                    <div class="text-900 w-full md:w-8 md:flex-order-0 flex-order-1">59759 Arnsberg</div>
+                  </div>
+                </li>
+                <li class="flex align-items-center py-3 px-2 border-top-1 surface-border flex-wrap">
+                  <div class="text-500 w-6 md:w-2 font-medium">Gläubigeridentifikation:</div>
+                  <div class="text-900 w-full md:w-8 md:flex-order-0 flex-order-1">DE71ZZZ00001271913</div>
+                </li>
+                <div class="surface-ground grid text-900 px-3 py-2">
+                  Hiermit ermächtige ich den FC Sonnenburg e.V. jährlich wiederkehrende Mitgliedsbeiträge in Höhe von
+                  z.Zt.
+                  <ul>
+                    <li>10,00€ für Jugendliche</li>
+                    <li>15,00€ für Rentner</li>
+                    <li>20,00€ für Erwachsene</li>
+                  </ul>
+                  von meinem Konto mittels Lastschrift einzuziehen, zugleich weise ich mein Kreditinstitut an, die vom
+                  FC Sonnenburg e.V. auf mein Konto gezogene Lastschrift einzulösen.<br>
+                  Die Kontobelastung des o.g. Beitrages erfolgt jährlich, am 01.04 (oder dem folgenden Geschäftstag)
+                  jeden Jahres, erstmalig jedoch am
+                </div>
+                <li>
+                  <div class="field-radiobutton text-900">
+                    <p-radioButton name="firstBookingDate"
+                                   formControlName="firstBookingDate"
+                                   value="01.04">
+                    </p-radioButton>
+                    <label>01.04</label>
+                  </div>
+                  <div class="field-radiobutton text-900">
+                    <p-radioButton name="firstBookingDate"
+                                   formControlName="firstBookingDate"
+                                   value="30.09">
+                    </p-radioButton>
+                    <label>30.09</label>
+                  </div>
+                </li>
+                <div class="surface-ground grid text-900 px-3 py-2">
+                  Hinweis: Ich kann innerhalb von acht Wochen, beginnend mit dem Belastungsdatum, die Erstattung des
+                  belasteten Betrages verlangen. Es gelten dabei die mit meinem Kreditinstitut vereinbarten Bedingungen.
+                </div>
+              </ul>
+              <div class="field mb-4 col-12">
+                <label for="name"
+                       class="font-medium text-900">Name (des Kontoinhabers):</label>
+                <input id="name"
+                       type="text"
+                       pInputText>
+              </div>
+              <div class="field mb-4 md:col-4 sm:col-12">
+                <label for="street"
+                       class="font-medium text-900">Straße:</label>
+                <input id="street"
+                       type="text"
+                       pInputText>
+              </div>
+              <div class="field mb-4 md:col-4 sm:col-12">
+                <label for="zip"
+                       class="font-medium text-900">PLZ:</label>
+                <input id="zip"
+                       type="text"
+                       pInputText>
+              </div>
+              <div class="field mb-4 md:col-4 sm:col-12">
+                <label for="city"
+                       class="font-medium text-900">Ort:
+                </label>
+                <input id="city"
+                       type="text"
+                       pInputText>
+              </div>
+              <div class="field mb-4 col-12">
+                <label for="iban"
+                       class="font-medium text-900">IBAN:
+                </label>
+                <input id="iban"
+                       type="text"
+                       pInputText>
+              </div>
+            </div>
+          </form>
+          <div class="flex field mb-4 col-1">
+            <div class="flex align-items-center">
+              <span class="ml-2 text-900">Datenschutzbestimmungen gelesen und akzeptiert </span>
+              <p-checkbox inputId="privacy"
+                          [binary]="true"
+                          (click)="display = !display">
+              </p-checkbox>
+            </div>
+          </div>
+          <div class="col-12">
+            <button pButton
+                    pRipple
+                    label="Mitglied werden"
+                    class="w-auto mt-3"
+                    (click)="createPdf()">
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<p-dialog header="Datenschutz: Nach Datenschutz Grundverordnung (DSGVO) und Bundesdatenschutzgesetz"
+          [(visible)]="display"
+          [style]="{width: '90vw'}">
+  <div>
+    Ich bin damit einverstanden, dass die mit der Beitrittserklärung erhobenen Daten durch den Freundschaftsclub
+    Sonnenburg e.V. für die Zwecke der Mitgliederverwaltung nach Maßgabender der Vorschriften der DSGVO gespeichert und
+    verarbeitet werden. Eine Witergabe an Dritte erfolgt nicht. Ich willige ein, dass der Verein im Zusammenhang mit dem
+    Vereinszweck, personenbezogene Daten und Fotos von mir in den Vereinsinfos und auf der Homepage des Vereins
+    veröffentlicht. Dies betrifft besonders die Veröffentlichung zu Ehrungen und Jubiläen.
+  </div>
+  <br>
+  <div>
+    Ich bin darauf hingewiesen worden, dass ich der Veröffentlichnung von personenbezogenen Daten jederzeit
+    widersprechen
+    kann. In diesem Fall wird die Veröffentlichung für die Zukunft schnellstens eingestellt.
+  </div>
+  <br>
+  <div>
+    Auf der Homepage veröffentlichte Fotos und Daten werden unverzüglich entfernt. Nach dem Austritt aus dem Verein
+    werden alle erhobenen
+    Daten gelöscht.
+  </div>
+  <ng-template pTemplate="footer">
+    <p-button (click)="display=false"
+              label="Ablehnen"
+              styleClass="p-button-text"></p-button>
+    <p-button (click)="display=false"
+              label="Zustimmen"
+              styleClass="p-button-text"></p-button>
+  </ng-template>
+</p-dialog> -->

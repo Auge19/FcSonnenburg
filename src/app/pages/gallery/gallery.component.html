@@ -1,0 +1,21 @@
+<ng-container *ngIf="(loading$ | async) then load; else default">
+</ng-container>
+<ng-template #load>
+  <div class="flex w-full justify-content-center">
+    <p-progressSpinner></p-progressSpinner>
+  </div>
+</ng-template>
+<ng-template #default>
+  <ng-container *ngIf="view === 'year'">
+    <fcs-preview [responsiveOptions]="responsiveOptions"
+                 (eventClicked)="loadImages($event)"
+                 (toggleView)="setView('event')"></fcs-preview>
+  </ng-container>
+</ng-template>
+
+<ng-container *ngIf="view === 'event'">
+  <fcs-overview [images]="images$"
+                [responsiveOptions]="responsiveOptions"
+                (toggleView)="setView('year')">
+  </fcs-overview>
+</ng-container>

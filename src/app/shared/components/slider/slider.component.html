@@ -1,0 +1,15 @@
+<div class="slideshow-container">
+  <div *ngFor="let s of slides; let i = index"
+       class="slide flex-column align-items-center justify-content-center relative"
+       [ngClass]="{'flex': currentIndex === i}">
+    <img *ngIf="s.icon"
+         class="icon"
+         [src]="s.icon">
+    <img [src]="s.background"
+         style="width:100%">
+    <div class="title-container">
+      <div class="title sm:text-2xl md:text-4xl lg:text-6xl text-white font-bold">{{s.title}}</div>
+      <div class="subtitle sm:text-2xl md:text-4xl lg:text-6xl text-white font-bold">{{s.subtitle}}</div>
+    </div>
+  </div>
+</div>

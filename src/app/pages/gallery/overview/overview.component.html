@@ -1,0 +1,44 @@
+<a pButton
+   pRipple
+   class="p-button-plain p-button-rounded p-button-text"
+   (click)="switchView()">
+  <i class="fa-solid fa-arrow-left">
+  </i>
+</a>
+<div *ngIf="images$"
+     class="grid">
+  <div *ngFor="let image of images$ | async; let index=index;"
+       class="col-6 sm:col-6 md:col-4 lg:col-3 xl:col-2"
+       key="index">
+    <img class="image"
+         [src]="image.thumb"
+         lazy
+         style="cursor: pointer"
+         (click)="imageClick(index)" />
+  </div>
+</div>
+<p-galleria [value]="(images$ | async)!"
+            [(visible)]="displayCustom"
+            [(activeIndex)]="activeIndex"
+            [responsiveOptions]="responsiveOptions"
+            [containerStyle]="{'max-width': '850px'}"
+            [numVisible]="7"
+            [circular]="true"
+            [fullScreen]="true"
+            [showItemNavigators]="true"
+            [showThumbnails]="false"
+            [baseZIndex]="100000">
+  <ng-template pTemplate="item"
+               let-item>
+    <img [src]="item.src"
+         style="width: 100%; display: block;" />
+  </ng-template>
+  <ng-template pTemplate="thumbnail"
+               let-item>
+    <div class="grid grid-nogutter justify-content-center">
+      <img lazy
+           [src]="item.thumb"
+           style="display: block;" />
+    </div>
+  </ng-template>
+</p-galleria>

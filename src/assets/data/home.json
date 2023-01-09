@@ -1,0 +1,78 @@
+{
+  "events": [
+    {
+      "date": "2023-01-14",
+      "title": "Papier-Bring Aktion",
+      "subtitle": "Festplatz Sonnenburg"
+    },
+    {
+      "date": "2023-01-28",
+      "title": "Wanderung mit der SGV",
+      "subtitle": "Petrus-Haus"
+    },
+    {
+      "date": "2023-02-03",
+      "title": "Jahreshauptversammlung",
+      "subtitle": "Petrus-Haus Hüsten"
+    },
+    {
+      "date": "2023-03-04",
+      "title": "Papier-Bring Aktion",
+      "subtitle": "Festplatz Sonnenburg"
+    }
+  ],
+  "slides": [
+    {
+      "icon": "assets/images/logo.jpg",
+      "title": "Willkommen",
+      "subtitle": "beim Freundschaftsclub Sonnenburg",
+      "background": "assets/images/home/welcome.jpg"
+    },
+    {
+      "title": "Papier-Bring Aktion",
+      "subtitle": "am 14.01",
+      "background": "assets/images/home/papieraktion.jpg"
+    },
+    {
+      "title": "Königspaar 2022",
+      "subtitle": "Fabian Kurz & Anna-Lena Weinz",
+      "background": "assets/images/home/koenigspaar.jpg"
+    },
+    {
+      "title": "Jahresphauptversammlung 2023",
+      "subtitle": "am 04.02 im Petrus-Haus",
+      "background": "assets/images/home/jahreshauptversammlung.jpg"
+    },
+    {
+      "title": "Jungsteinewerferkönig 2022",
+      "subtitle": "Lukas Magh",
+      "background": "assets/images/home/jugend.jpg"
+    }
+  ],
+  "people": [
+    {
+      "name": "Detlef Limberg",
+      "router-link": "vorstand",
+      "url": "assets/images/home/vorsitz1.jpg"
+    },
+    {
+      "name": "Simon Weber",
+      "url": ""
+    },
+    {
+      "name": "Lukas Magh",
+      "router-link": "koenige",
+      "url": ""
+    },
+    {
+      "name": "Fabian Kurz & Anna-Lena Weinz",
+      "router-link": "koenige",
+      "url": ""
+    },
+    {
+      "name": "Henry Groß & Nele Jochheim",
+      "router-link": "koenige",
+      "url": ""
+    }
+  ]
+}
