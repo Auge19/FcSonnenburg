@@ -3,4 +3,5 @@ export interface Slide {
   title: string;
   subtitle: string;
   background: string;
+  routerLink: string;
 }

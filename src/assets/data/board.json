@@ -10,9 +10,9 @@
     "position": "2. Vorsitzender"
   },
   {
-    "name": "Valerie Arndt",
+    "name": "Steffen Augustin",
     "url": "assets/images/board/vorsitz3.jpg",
-    "position": "3. Vorsitzende"
+    "position": "3. Vorsitzender"
   },
   {
     "name": "Heinz Kurz",
@@ -20,26 +20,16 @@
     "position": "1. Geschäftsführer"
   },
   {
-    "name": "Andreas Schauerte",
+    "name": "Christian Jochheim",
     "url": "assets/images/board/gesch2.jpg",
     "position": "2. Geschäftsführer"
-  },
-  {
-    "name": "Christian Jochheim",
-    "url": "assets/images/board/kass1.jpg",
-    "position": "1. Kassierer"
   },
   {
     "name": "Alina Limberg",
     "position": "1. Schriftführerin"
   },
   {
-    "name": "Steffen Augustin",
-    "url": "assets/images/board/schrift2.jpg",
-    "position": "2. Schriftführer"
-  },
-  {
-    "name": "Günter Bamberg Jr.",
+    "name": "Martin Humpert",
     "url": "assets/images/board/bei1.jpg",
     "position": "1. Beisitzer"
   },
@@ -49,7 +39,7 @@
     "position": "2. Beisitzer"
   },
   {
-    "name": "Martin Humpert",
+    "name": "Fabian Kurz",
     "url": "assets/images/board/bei3.jpg",
     "position": "3. Beisitzer"
   },
@@ -57,11 +47,6 @@
     "name": "Annette Kempkensteffen",
     "url": "assets/images/board/bei4.jpg",
     "position": "4. Beisitzerin"
-  },
-  {
-    "name": "Fabian Kurz",
-    "url": "assets/images/board/bei5.jpg",
-    "position": "5. Beisitzer"
   },
   {
     "name": "Lukas Magh",
