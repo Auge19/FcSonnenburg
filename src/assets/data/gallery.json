@@ -863,7 +863,7 @@
   {
     "id": 2,
     "year": 2019,
-    "event": "1. Mai",
+    "title": "1. Mai",
     "dir": "1.Mai",
     "images": [
       "STC_2923.jpg",
@@ -2029,7 +2029,7 @@
     ]
   },
   {
-    "id": 12,
+    "id": 13,
     "year": 2022,
     "title": "Sommerfest",
     "dir": "sommerfest",
@@ -3204,10 +3204,10 @@
     ]
   },
   {
-    "id": 12,
+    "id": 14,
     "year": 2022,
-    "title": "Sommerfest",
-    "dir": "sommerfest",
+    "title": "Nikolausfeier",
+    "dir": "nikolaus",
     "images": [
       "_MG_0713.JPG",
       "_MG_0714.JPG",

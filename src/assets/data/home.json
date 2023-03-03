@@ -1,12 +1,7 @@
 {
   "events": [
     {
-      "date": "2023-03-04",
-      "title": "Papier-Bring Aktion",
-      "subtitle": "Festplatz Sonnenburg"
-    },
-    {
-      "date": "2023-04-06",
+      "date": "2023-04-05",
       "title": "Brunnen schmücken",
       "subtitle": "Marktplatz Hüsten"
     },
@@ -18,6 +13,11 @@
     {
       "date": "2023-04-22",
       "title": "Papiersammlung",
+      "subtitle": "Festplatz Sonnenburg"
+    },
+    {
+      "date": "2023-05-01",
+      "title": "Maifest",
       "subtitle": "Festplatz Sonnenburg"
     }
   ],

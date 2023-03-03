@@ -53,8 +53,17 @@ export class LayoutComponent implements OnDestroy, OnInit {
         routerLink: 'vorstand'
       },
       {
-        label: 'Mitglied werden',
-        routerLink: 'mitglied'
+        label: 'Dokumente',
+        items: [
+          {
+            label: 'Grilldienst',
+            command: () => window.open('assets/Theken-und Grilldienst 2023.pdf')
+          },
+          {
+            label: 'Mitgliedsantrag',
+            command: () => window.open('assets/Beitrittserklärung.pdf')
+          }
+        ]
       }
     );
   }
