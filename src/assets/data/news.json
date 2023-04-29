@@ -1,6 +1,30 @@
 [
   {
     "header": {
+      "icon": "fa-solid fa-chess",
+      "title": "Wikingerschach Turnier",
+      "subtitle": "Montag, 01.05.2023"
+    },
+    "content": "<p>Am 1. Mai findet gegen 12Uhr das 2. Sonnenburg Wikingerschach Turnier statt.</p><p><br></p><p>Wer dieses Jahr leider nicht dabei sein kann oder einfach den aktuellen Stand wissen m&ouml;chte, kann unter folgendem Link das <a href=\"https://www.meinturnierplan.de/showit.php?id=1682753072\">Turnier Live</a> verfolgen.</p><p><br></p><p>Wir w&uuml;nschen allen Teilnehmern viel Spa&szlig;!</p><p>Der Vorstand</p>"
+  },
+  {
+    "header": {
+      "icon": "fa-solid fa-bus",
+      "title": "Transport Schützenfest Sonnendorf",
+      "subtitle": "Samstag, 13.05.2023"
+    },
+    "content": "<p>Am 13.05 ist Wald- und Schützenfest beim FC Sonnendorf in Neheim.<br><br>Wir würden gemeinsam um 17:30 Uhr mit einem gemieteten Bus dorthin fahren.<br>Anmeldungen werden bis zum 07.05 angenommen. Gerne per Direktnachricht oder unter <a href=\"mailto:info@fc-sonnenburg.de?subject=Anmeldung Sonnendorf\">info@fc-sonnenburg.de</a><br><br>Mit freundlichen Grüßen<br><strong>Der Vorstand</strong></p>"
+  },
+  {
+    "header": {
+      "icon": "fa-solid fa-newspaper",
+      "title": "Papier-Bring Aktion",
+      "subtitle": "Samstag, 22.04.2023"
+    },
+    "content": "<p><strong><span style=\"font-size:24px\">Bitte stellen Sie das Papier bis 8:15 Uhr geb&uuml;ndelt an den Stra&szlig;enrand.</span></strong><p><strong><span style=\"text-align:center;\">Die Helfer treffen sich diesmal um 09:30 am Sonnenburgplatz</span></strong></p><p style=\"margin:0cm;font-size:13px;text-align:center;\"><strong><span style=\"font-size:24px;\">&nbsp;</span></strong></p><p style=\"margin:0cm;font-size:13px\">&nbsp;</p><p style=\"margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;font-size:11px;text-align:justify;\"><span style=\"font-size:15px\">Der Erl&ouml;s aus den Altpapier-Sammlungen ist schon seit Jahren Haupteinnahmequelle f&uuml;r die Finanzierung unserer Kinder-Weihnachtsfeier und des Senioren-Nachmittages.</span></p><p style=\"margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;font-size:11px;text-align:center;\"><strong><span style=\"font-size:15px;\">Wir m&ouml;chten euch deshalb bitten</span></strong><span style=\"font-size:15px;\">:</span></p><p style=\"margin:0cm;font-size:13px;text-align:justify;\"><strong><span style=\"font-size:15px;\">Sammelt weiter Altpapier f&uuml;r unsere Sonnenburg</span></strong><span style=\"font-size:15px;\">, damit wir auch in Zukunft diese Veranstaltungen in der bisherigen Form aufrechterhalten und finanzieren k&ouml;nnen. Wir werden auch weiterhin&nbsp;</span><strong><span >Papier-Bring-Aktionen</span></strong><span>&nbsp;durchf&uuml;hren.&nbsp;</span><span>Dann stehen Container auf unserem Festplatz am Wicheler Weg bereit. Die jeweiligen Termine stehen im Sonnenburg-Kalender und werden in der &ouml;rtlichen Presse bekannt gegeben.&nbsp;</span></p><p style=\"margin:0cm;font-size:13px;text-align:justify;\"><strong><span style=\"font-size: 15px; color: rgb(13, 13, 13); --darkreader-inline-color:#e0ddd9;\">&nbsp;</span></strong></p><p style=\"margin:0cm;font-size:13px;text-align:justify;\"><strong><span style=\"font-size: 15px;color: rgb(13, 13, 13); --darkreader-inline-color:#e0ddd9;\">Mit freundlichen Gr&uuml;&szlig;en</span></strong></p><p style=\"margin:0cm;font-size:13px;text-align:justify;\"><strong><span style=\"font-size: 15px;color: rgb(13, 13, 13); --darkreader-inline-color:#e0ddd9;\">Der Vorstand</span></strong></p>"
+  },
+  {
+    "header": {
       "icon": "fa-solid fa-chess-knight",
       "title": "Maifest 2023",
       "subtitle": "Montag, 01.05.2023"

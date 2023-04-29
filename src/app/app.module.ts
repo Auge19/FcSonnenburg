@@ -1,4 +1,6 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
+import localeDe from '@angular/common/locales/de';
+registerLocaleData(localeDe);
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -14,6 +16,7 @@ import { galleryReducer } from '@store/gallery/gallery.reducers';
 import { EffectsModule } from '@ngrx/effects';
 import { GalleryEffects } from '@store/gallery/gallery.effects';
 import { kingReducer } from '@store/king/king.reducers';
+import { registerLocaleData } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent],
@@ -32,7 +35,12 @@ import { kingReducer } from '@store/king/king.reducers';
     }),
     StoreDevtoolsModule.instrument()
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LOCALE_ID,
+      useValue: 'de-DE'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

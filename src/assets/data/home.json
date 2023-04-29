@@ -1,24 +1,24 @@
 {
   "events": [
     {
-      "date": "2023-04-05",
-      "title": "Brunnen schmücken",
-      "subtitle": "Marktplatz Hüsten"
-    },
-    {
-      "date": "2023-04-09",
-      "title": "Ostertreff",
-      "subtitle": "Marktplatz Hüsten"
-    },
-    {
-      "date": "2023-04-22",
-      "title": "Papiersammlung",
-      "subtitle": "Festplatz Sonnenburg"
-    },
-    {
       "date": "2023-05-01",
       "title": "Maifest",
       "subtitle": "Festplatz Sonnenburg"
+    },
+    {
+      "date": "2023-05-13",
+      "title": "Schützenfest Sonnendorf",
+      "subtitle": "Marktplatz Hüsten"
+    },
+    {
+      "date": "2023-05-18",
+      "title": "Vatertagswanderung",
+      "subtitle": "Sonnenburgbank"
+    },
+    {
+      "date": "2023-05-27",
+      "title": "Abordnung GVU",
+      "subtitle": "Vereinsheim GVU"
     }
   ],
   "slides": [
@@ -29,10 +29,9 @@
       "background": "assets/images/home/welcome.jpg"
     },
     {
-      "title": "Bericht zur Jahreshauptversammlung 2023",
-      "subtitle": "am 03.02 im Petrus-Haus",
-      "background": "assets/images/home/JHV23.jpg",
-      "routerLink": "/news"
+      "title": "2. Sonnenburg Wikingerschachturnier",
+      "subtitle": "Live Turnierplan",
+      "background": "assets/images/home/wikinger-live.jpg"
     },
     {
       "title": "Königspaar 2022",
@@ -40,9 +39,9 @@
       "background": "assets/images/home/koenigspaar.jpg"
     },
     {
-      "title": "Papier-Bring Aktion",
-      "subtitle": "am 04.03",
-      "background": "assets/images/home/papieraktion.jpg"
+      "title": "Schützenfest Sonnendorf",
+      "subtitle": "am 13.05",
+      "background": "assets/images/home/sonnendorf.jpg"
     },
     {
       "title": "Jungsteinewerferkönig 2022",
